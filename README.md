@@ -1,8 +1,8 @@
-# Convert ChatGPT conversations to Markdown
+# Archive ChatGPT conversations in Markdown
 
 ## Instructions
 
-* Step 1: Export your data from ChatGPT settings and unzip the file
+* Step 1: Export your data from [ChatGPT settings](https://chat.openai.com/#settings/DataControls) and unzip the file
 * Step 2: Set the file path in conv.py (`full_path_to_conversations` variable)
 * Step 3: Run the script: `python3 convert.py`
 
