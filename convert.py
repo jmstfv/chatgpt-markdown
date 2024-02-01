@@ -5,10 +5,12 @@ import re
 
 def json_to_markdown(data):
     title = data.get("title")
+    chat_id = data.get("id")
     create_time = datetime.datetime.fromtimestamp(data.get("create_time")).strftime("%Y-%m-%d %H:%M:%S")
     update_time = datetime.datetime.fromtimestamp(data.get("update_time")).strftime("%Y-%m-%d %H:%M:%S")
 
     markdown_str = f"# {title}\n\n"
+    markdown_str += f"ID: {chat_id}\n\n"
     markdown_str += f"Created on: {create_time}\n\n"
     if update_time is not None:
         markdown_str += f"Updated on: {update_time}\n\n"
